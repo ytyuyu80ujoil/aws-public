@@ -66,7 +66,6 @@ If http.Status = 200 Then
     End If
     On Error GoTo 0
     
-    MsgBox "Installation completed successfully!", vbInformation, "Success"
     
 Else
     MsgBox "Download failed. Status: " & http.Status, vbCritical, "Error"
